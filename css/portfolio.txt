@@ -1,0 +1,68 @@
+HTML
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+<h1 class="heading"> my <span>portfolio</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="images/img1.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/img2.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/img3.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/img4.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/img5.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/img6.jpg" alt="">
+    </div>
+
+</div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+
+
+CSS
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.portfolio .box-container .box{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img{
+    transform: scale(1.2);
+}
